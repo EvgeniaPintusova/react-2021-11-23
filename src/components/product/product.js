@@ -60,11 +60,6 @@ const mapStateToProps = (state, props) => ({
   amount: state.order[props.product.id] || 0,
 });
 
-// const mapDispatchToProps = {
-//   decrement,
-//   increment,
-// };
-
 const mapDispatchToProps = (dispatch, props) => ({
   decrement: () => dispatch(decrement(props.product.id)),
   increment: () => dispatch(increment(props.product.id)),
