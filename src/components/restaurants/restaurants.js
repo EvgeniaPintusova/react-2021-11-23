@@ -21,7 +21,7 @@ function Restaurants({
   changeRestaurant,
 }) {
   useEffect(() => {
-    if (!loading && !loaded) loadRestaurants();
+    if (!loading && !loaded){ loadRestaurants();}
   }, [loading, loaded, loadRestaurants]);
 
   const tabs = useMemo(

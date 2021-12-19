@@ -3,6 +3,13 @@ import { ADD_REVIEW } from '../constants';
 import { normalizedUsers } from '../../fixtures';
 import { arrToMap } from '../utils';
 
+const initialState = {
+  entities: {},
+  loading: false,
+  loaded: false,
+  error: null,
+};
+
 export default produce((draft = arrToMap(normalizedUsers), action) => {
   const { type, review, userId } = action;
 
